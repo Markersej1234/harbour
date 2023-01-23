@@ -2,8 +2,6 @@ package entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.sql.Time;
-import java.util.Date;
 import java.util.List;
 @Entity
 @NamedQuery(name = "Harbour.deleteAllRows", query = "DELETE from Harbour ")
