@@ -104,9 +104,6 @@ class DemoResourceTest {
     }
 
 
-
-
-
     @Test
     void createUser() {
         String json = "{userName: test, userPass: 1234}";
