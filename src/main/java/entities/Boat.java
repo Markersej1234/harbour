@@ -35,6 +35,13 @@ public class Boat {
         this.image = image;
     }
 
+    public Boat(String brand, String make, String name) {
+        this.brand = brand;
+        this.make = make;
+        this.name = name;
+
+    }
+
     public Boat(int id, String name, String brand, String make) {
 
     }
@@ -43,12 +50,6 @@ public class Boat {
         return ownerList;
     }
 
-    public Boat(String brand, String make, String name) {
-        this.brand = brand;
-        this.make = make;
-        this.name = name;
-
-    }
 
     public int getId() {
         return id;
