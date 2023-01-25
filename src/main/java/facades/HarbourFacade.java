@@ -23,7 +23,7 @@ public class HarbourFacade {
         return HarbourDTO.getDtos(rms);
     }
 
-    public HarbourDTO createBoat(HarbourDTO pn) {
+    public HarbourDTO createHarbour(HarbourDTO pn) {
         Harbour harbour = new Harbour(pn.getName(), pn.getAddress(), pn.getCapacity());
         EntityManager em = emf.createEntityManager();
         try {
@@ -36,7 +36,7 @@ public class HarbourFacade {
         return new HarbourDTO(harbour);
     }
 
-    public HarbourDTO updateBoat(HarbourDTO pn) {
+    public HarbourDTO updateHarbour(HarbourDTO pn) {
         EntityManager em = emf.createEntityManager();
         Harbour a = (em.find(Harbour.class, pn.getId()));
         try {
